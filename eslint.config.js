@@ -39,6 +39,8 @@ export default defineConfig([
         'warn', //
         { allowConstantExport: true },
       ],
+      'no-redeclare': 'off',
+      '@typescript-eslint/no-redeclare': 'error',
       'no-empty': 'warn',
       'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
       '@typescript-eslint/no-explicit-any': 'off',
